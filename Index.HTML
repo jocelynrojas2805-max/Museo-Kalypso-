@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo Kalypso - Cotizador de Entrada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>🏛️ Museo Kalypso</h1>
+
+    <!-- Paso 1: Nombre y cantidad -->
+    <div id="paso1">
+      <div class="form-group">
+        <label for="nombre">Nombre del responsable del grupo:</label>
+        <input type="text" id="nombre" placeholder="Ej. Ana Pérez">
+      </div>
+
+      <div class="form-group">
+        <label for="cantidad">Cantidad de personas en el grupo:</label>
+        <input type="number" id="cantidad" min="1" placeholder="Ej. 3">
+      </div>
+
+      <button onclick="generarCamposEdades()">Siguiente</button>
+    </div>
+
+    <!-- Paso 2: Edades -->
+    <div id="paso2" class="oculto">
+      <h3>Ingresa la edad de cada visitante:</h3>
+      <div id="lista-edades" class="edades-container"></div>
+      <button onclick="calcularTotal()">Calcular y Generar Recibo</button>
+    </div>
+
+    <!-- Paso 3: Recibo -->
+    <div id="recibo" class="recibo oculto">
+      <h2>---------------------------------</h2>
+      <p><strong>Recibo para:</strong> <span id="res-nombre"></span></p>
+      <p><strong>Total de visitantes:</strong> <span id="res-visitas"></span></p>
+      <div id="desglose-tarifas"></div>
+      <p class="total">EL TOTAL A PAGAR ES: $<span id="res-total"></span></p>
+      <p style="text-align: center; font-style: italic; color: #7f8c8d; margin-top: 15px;">
+        ¡Disfruten su visita al Museo Kalypso!
+      </p>
+      <h2>---------------------------------</h2>
+      <button onclick="reiniciarFormulario()" style="background-color: #7f8c8d;">Nuevo Registro</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
