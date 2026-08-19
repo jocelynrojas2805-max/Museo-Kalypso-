@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.edades-container {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+.recibo {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed #27ae60;
+  border-radius: 8px;
+  background-color: #f9fbf9;
+}
+
+.recibo h2 {
+  margin-top: 0;
+  color: #27ae60;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.recibo p {
+  margin: 8px 0;
+  color: #2c3e50;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+.oculto {
+  display: none;
+
+}
+
+
